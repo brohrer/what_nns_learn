@@ -1,0 +1,69 @@
+\documentclass{article}[12pt]
+\usepackage{amsmath}
+
+\title{What neural networks can learn}
+\author{Brandon Rohrer}
+\date{December 12, 2018}
+\begin{document}
+   \maketitle
+   Equations for examples
+
+    \huge    
+    \begin{equation*}
+        y = m x + b \\
+    \end{equation*}
+    \begin{align*}
+        u_{00} & = x_0 w_{00} \\
+        u_{10} & = x_1 w_{10} \\
+        v_0 & = u_{00} + u_{10} 
+    \end{align*}
+    \begin{align*}
+        x_0 &= 1\\
+        x_1 &= x\\
+        w_{00} &= b\\
+        w_{10} &= m\\
+        v_0 &= y\\
+    \end{align*}
+    \begin{align*}
+        u_{00} & = x_0 w_{00} \\
+        u_{10} & = x_1 w_{10} \\
+        u_{20} & = x_2 w_{20} \\
+        v_0 & = u_{00} + u_{10} + u_{20} 
+    \end{align*}
+    \begin{align*}
+        u_{i0} & = x_i w_{i0} \\
+        v_{0} & = \sum_i u_{i0} \\
+    \end{align*}
+    \begin{align*}
+        u_{i0I} & = x_i w_{i0I} \\
+        v_{0I} & = \sum_i u_{i0I} \\
+        u_{i0II} & = x_i w_{i0II} \\
+        v_{0II} & = \sum_i u_{i0II} \\
+        u_{i0III} & = x_i w_{i0III} \\
+        v_{0III} & = \sum_i u_{i0III} \\
+    \end{align*}
+    \begin{align*}
+        u_{i0L} & = x_i w_{i0L} \\
+        v_{0L} & = \sum_i u_{i0L} \\
+    \end{align*}
+    \begin{align*}
+        u_{ij} & = x_i w_{ij} \\
+        v_{j} & = \sum_i u_{ij} \\
+    \end{align*}
+    \begin{align*}
+        u_{ij} & = x_i w_{ij} \\
+        v_{j} & = \sum_i u_{ij} \\
+        y_{j} & = f(v_{j}) \\
+    \end{align*}
+    \begin{align*}
+        f(a) & = \frac{1}{1 + e^{-a}} \\ 
+    \end{align*}
+    \begin{align*}
+        u_{ij} & = x_i w_{ij} \\
+        v_{j} & = \sum_i u_{ij} \\
+        y_{j} & = f(v_{j}) \\
+    \end{align*}
+    \begin{align*}
+        f(a) & = \frac{e^{a} - e^{-a}}{e^{a} + e^{-a}} \\ 
+    \end{align*}
+\end{document}
